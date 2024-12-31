@@ -19,6 +19,7 @@ dependencies:
       ref: main
   flutter_riverpod: ^2.6.1
   hive_flutter: ^1.1.0
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
