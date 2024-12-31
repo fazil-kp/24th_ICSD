@@ -16,7 +16,7 @@ class SplashScreen extends HookConsumerWidget {
     final animation = CurvedAnimation(parent: controller, curve: Curves.easeIn);
     useEffect(() {
       controller.forward();
-      final timer = Timer(const Duration(milliseconds: 1500), () => context.pushReplacement('/main'));
+      final timer = Timer(const Duration(seconds: 2), () => context.pushReplacement('/main'));
       return timer.cancel;
     }, [controller]);
     return Container(
@@ -36,7 +36,7 @@ class SplashScreen extends HookConsumerWidget {
                 children: [
                   Text('Welcome', style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey, fontSize: 14, fontWeight: FontWeight.w400)),
                   Icon(Icons.favorite, color: Colors.red, size: 20),
-                  Text('Faris English', style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey, fontSize: 14, fontWeight: FontWeight.w400)),
+                  Text('24th ICSD', style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey, fontSize: 14, fontWeight: FontWeight.w400)),
                 ],
               ),
               30.height,
