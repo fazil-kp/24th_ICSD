@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mine/config/color/colors.dart';
+import 'package:mine/extension/context_extension.dart';
 
 class CustomScaffold extends ConsumerWidget {
   final Widget? child;
-  final String? title;
-  final bool? enableBack;
-  final bool? showAppBar;
-  final Widget? trailing;
 
-  const CustomScaffold({super.key, this.child, this.title, this.enableBack = true, this.trailing, this.showAppBar = true});
+  const CustomScaffold({super.key, this.child});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -19,7 +16,12 @@ class CustomScaffold extends ConsumerWidget {
         extendBody: true,
         resizeToAvoidBottomInset: false,
         backgroundColor: whiteColor,
-        body: child ?? SizedBox(),
+        body: child ??
+            Container(
+              height: context.height(),
+              width: context.width(),
+              color: redColor,
+            ),
       ),
     );
   }
