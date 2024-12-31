@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:icsd/view/home/home_screen.dart';
 import 'package:mine/config/color/colors.dart';
-import 'package:mine/extension/context_extension.dart';
 
 class CustomScaffold extends ConsumerWidget {
   final Widget? child;
@@ -16,12 +16,7 @@ class CustomScaffold extends ConsumerWidget {
         extendBody: true,
         resizeToAvoidBottomInset: false,
         backgroundColor: whiteColor,
-        body: child ??
-            Container(
-              height: context.height(),
-              width: context.width(),
-              color: redColor,
-            ),
+        body: child ?? HomeScreen(),
       ),
     );
   }

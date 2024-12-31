@@ -6,15 +6,16 @@ extension ThemeContext on BuildContext {
   Color get surface => Theme.of(this).colorScheme.surface;
   Color get onBackground => Theme.of(this).colorScheme.onSurface;
   Color get onPrimary => Theme.of(this).colorScheme.onPrimary;
+  Color get secondary => Theme.of(this).colorScheme.secondary;
 }
 
 const lightColorScheme = ColorScheme(
   brightness: Brightness.light,
-  primary: Colors.blue,
+  primary: Color(0XFF2c0e4e),
   onPrimary: Color.fromARGB(255, 255, 255, 255),
   primaryContainer: Color.fromARGB(255, 255, 255, 255),
   onPrimaryContainer: Color.fromARGB(255, 255, 255, 255),
-  secondary: Color(0xFF00286B),
+  secondary: Color(0xFF9229ff),
   onSecondary: Color.fromARGB(255, 255, 255, 255),
   secondaryContainer: Color(0xFFB3EBFF),
   onSecondaryContainer: Color.fromARGB(255, 0, 0, 0),
@@ -22,7 +23,7 @@ const lightColorScheme = ColorScheme(
   onTertiary: Color(0xFF000000),
   tertiaryContainer: Color(0xFFF7D8FF),
   onTertiaryContainer: Color.fromARGB(255, 0, 0, 0),
-  surface: Color.fromARGB(255, 230, 233, 232),
+  surface: Colors.white,
   onSurface: Color.fromARGB(255, 0, 0, 0),
   error: Color(0xFFEA1505),
   onError: Color(0xFFFFFFFF),
