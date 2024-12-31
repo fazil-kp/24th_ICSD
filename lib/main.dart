@@ -22,6 +22,7 @@ class ICSD extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       routerConfig: routeX,
       title: '24th ICSD',
+      scrollBehavior: const MaterialScrollBehavior().copyWith(scrollbars: false),
       themeMode: ref.watch(scaffoldVM).isLightTheme ? ThemeMode.light : ThemeMode.dark,
       theme: AppTheme.getThemeData(ThemeMode.light),
       darkTheme: AppTheme.getThemeData(ThemeMode.dark),
