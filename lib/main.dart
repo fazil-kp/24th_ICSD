@@ -4,8 +4,10 @@ import 'package:hive_flutter/adapters.dart';
 import 'package:icsd/config/theme.dart';
 import 'package:icsd/routes/icsd_routes.dart';
 import 'package:icsd/view_model/riverpod.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 void main() async {
+  setPathUrlStrategy();
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
   runApp(const ProviderScope(child: ICSD()));
