@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:icsd/common_elements/event_card.dart';
 import 'package:icsd/config/colors.dart';
 import 'package:icsd/config/theme.dart';
 import 'package:icsd/view/program/day1/day1_first_row.dart';
@@ -27,7 +26,9 @@ class HomeScreenFooter extends StatelessWidget {
         ),
         //! First Row of Events
         Day1FirstRow(),
+        //! Second Row of Events
         Day1SecondRow(),
+        //! Third Row of Events
         Day1ThirdRow(),
       ],
     );
