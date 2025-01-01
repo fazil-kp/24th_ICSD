@@ -30,13 +30,13 @@ class SplashScreen extends HookConsumerWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Expanded(child: Center(child: Image.asset('assets/images/splash.png', width: 200, color: redColor))),
+              Expanded(child: Center(child: Image.asset('assets/images/splash.png', width: 400, height: 250, fit: BoxFit.fill))),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Welcome', style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey, fontSize: 14, fontWeight: FontWeight.w400)),
+                  Text('Welcome ', style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey, fontSize: 14, fontWeight: FontWeight.w400)),
                   Icon(Icons.favorite, color: Colors.red, size: 20),
-                  Text('24th ICSD', style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey, fontSize: 14, fontWeight: FontWeight.w400)),
+                  Text(' 24th ICSD', style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey, fontSize: 14, fontWeight: FontWeight.w400)),
                 ],
               ),
               30.height,
