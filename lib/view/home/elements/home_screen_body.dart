@@ -32,13 +32,14 @@ class HomeScreenBody extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 8.0),
                 child: Container(
                   width: context.width(),
-                  decoration: BoxDecoration(color: context.secondary, borderRadius: BorderRadius.circular(12)),
-                  padding: EdgeInsets.all(8),
-                  child: Column(
-                    children: [
-                      Text("Welcome to", style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.w500, color: context.surface)),
-                    ],
-                  ),
+                  decoration: BoxDecoration(color: context.secondary, borderRadius: BorderRadius.circular(12), image: DecorationImage(image: AssetImage("assets/images/ban1.jpg"), fit: BoxFit.fill)),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0),
+                child: Container(
+                  width: context.width(),
+                  decoration: BoxDecoration(color: context.secondary, borderRadius: BorderRadius.circular(12), image: DecorationImage(image: AssetImage("assets/images/ban2.jpg"), fit: BoxFit.fill)),
                 ),
               ),
             ],

@@ -4,6 +4,7 @@
         "fixnum",
         "icsd",
         "pubspec",
+        "rcss",
         "riverpod"
     ]
 }
