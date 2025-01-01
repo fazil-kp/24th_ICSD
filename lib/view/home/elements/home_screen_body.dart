@@ -2,7 +2,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:icsd/config/colors.dart';
 import 'package:icsd/config/theme.dart';
-import 'package:mine/extension/context_extension.dart';
 import 'package:mine/extension/integer_extension.dart';
 
 class HomeScreenBody extends StatelessWidget {
@@ -30,17 +29,11 @@ class HomeScreenBody extends StatelessWidget {
             items: [
               Padding(
                 padding: const EdgeInsets.only(left: 8.0),
-                child: Container(
-                  width: context.width(),
-                  decoration: BoxDecoration(color: context.secondary, borderRadius: BorderRadius.circular(12), image: DecorationImage(image: AssetImage("assets/images/ban1.jpg"), fit: BoxFit.fill)),
-                ),
+                child: Container(decoration: BoxDecoration(color: context.secondary, borderRadius: BorderRadius.circular(12), image: DecorationImage(image: AssetImage("assets/images/ban1.jpg"), fit: BoxFit.fill))),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 8.0),
-                child: Container(
-                  width: context.width(),
-                  decoration: BoxDecoration(color: context.secondary, borderRadius: BorderRadius.circular(12), image: DecorationImage(image: AssetImage("assets/images/ban2.jpg"), fit: BoxFit.fill)),
-                ),
+                child: Container(decoration: BoxDecoration(color: context.secondary, borderRadius: BorderRadius.circular(12), image: DecorationImage(image: AssetImage("assets/images/ban2.jpg"), fit: BoxFit.fill))),
               ),
             ],
           ),
