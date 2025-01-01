@@ -42,6 +42,10 @@ class HomeScreenBody extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 8.0),
                 child: Container(decoration: BoxDecoration(color: context.secondary, borderRadius: BorderRadius.circular(12), image: DecorationImage(image: AssetImage("assets/images/ban2.jpg"), fit: BoxFit.fill))),
               ),
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0),
+                child: Container(decoration: BoxDecoration(color: context.secondary, borderRadius: BorderRadius.circular(12), image: DecorationImage(image: AssetImage("assets/images/ban3.jpg"), fit: BoxFit.fill))),
+              ),
             ],
           ),
         )
