@@ -25,7 +25,7 @@ class HomeScreenBody extends StatelessWidget {
               Text("1", style: context.bodySmall?.copyWith(fontSize: 16, fontWeight: FontWeight.bold, color: context.tertiary)),
               Divider(),
               Text("Time", style: context.bodySmall?.copyWith(fontSize: 14, fontWeight: FontWeight.w600, color: context.surface)),
-              Text("9:00 - 19:00 ", style: context.bodySmall?.copyWith(fontSize: 13, fontWeight: FontWeight.bold, color: context.tertiary)),
+              Text("9:00 - 19:00 ", style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary)),
             ],
           ),
         ),
