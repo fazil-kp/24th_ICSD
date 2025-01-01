@@ -13,12 +13,19 @@ class HomeScreenBody extends StatelessWidget {
       children: [
         Container(
           height: 150,
-          width: 80,
+          width: 100,
           decoration: BoxDecoration(color: context.secondary, borderRadius: BorderRadius.circular(12)),
           padding: EdgeInsets.all(8),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            spacing: 5,
             children: [
-              Text("Welcome to", style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.w500, color: context.surface)),
+              Text("Day", style: context.bodySmall?.copyWith(fontSize: 14, fontWeight: FontWeight.w600, color: context.surface)),
+              Text("1", style: context.bodySmall?.copyWith(fontSize: 13, fontWeight: FontWeight.w600, color: Colors.orange)),
+              Divider(),
+              Text("Time", style: context.bodySmall?.copyWith(fontSize: 14, fontWeight: FontWeight.w600, color: context.surface)),
+              Text("9:00 - 19:00 ", style: context.bodySmall?.copyWith(fontSize: 13, fontWeight: FontWeight.w600, color: Colors.orange)),
             ],
           ),
         ),

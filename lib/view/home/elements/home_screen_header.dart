@@ -13,7 +13,7 @@ class HomeScreenHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Container(height: 40, width: 40, decoration: BoxDecoration(shape: BoxShape.circle, color: whiteColor, image: DecorationImage(image: AssetImage("assets/images/rcss.png"), fit: BoxFit.contain))),
+        Container(height: 40, width: 40, decoration: BoxDecoration(shape: BoxShape.circle, color: whiteColor, image: DecorationImage(image: AssetImage("assets/images/dyuthi.png"), fit: BoxFit.fill))),
         10.width,
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
