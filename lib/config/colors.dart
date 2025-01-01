@@ -7,6 +7,7 @@ extension ThemeContext on BuildContext {
   Color get onBackground => Theme.of(this).colorScheme.onSurface;
   Color get onPrimary => Theme.of(this).colorScheme.onPrimary;
   Color get secondary => Theme.of(this).colorScheme.secondary;
+  Color get tertiary => Theme.of(this).colorScheme.tertiary;
 }
 
 const lightColorScheme = ColorScheme(
@@ -19,7 +20,7 @@ const lightColorScheme = ColorScheme(
   onSecondary: Color.fromARGB(255, 255, 255, 255),
   secondaryContainer: Color(0xFFB3EBFF),
   onSecondaryContainer: Color.fromARGB(255, 0, 0, 0),
-  tertiary: Color.fromARGB(255, 96, 100, 100),
+  tertiary: Color(0XFFffd52a),
   onTertiary: Color(0xFF000000),
   tertiaryContainer: Color(0xFFF7D8FF),
   onTertiaryContainer: Color.fromARGB(255, 0, 0, 0),

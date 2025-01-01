@@ -22,10 +22,10 @@ class HomeScreenBody extends StatelessWidget {
             spacing: 5,
             children: [
               Text("Day", style: context.bodySmall?.copyWith(fontSize: 14, fontWeight: FontWeight.w600, color: context.surface)),
-              Text("1", style: context.bodySmall?.copyWith(fontSize: 13, fontWeight: FontWeight.w600, color: Colors.orange)),
+              Text("1", style: context.bodySmall?.copyWith(fontSize: 16, fontWeight: FontWeight.w600, color: context.tertiary)),
               Divider(),
               Text("Time", style: context.bodySmall?.copyWith(fontSize: 14, fontWeight: FontWeight.w600, color: context.surface)),
-              Text("9:00 - 19:00 ", style: context.bodySmall?.copyWith(fontSize: 13, fontWeight: FontWeight.w600, color: Colors.orange)),
+              Text("9:00 - 19:00 ", style: context.bodySmall?.copyWith(fontSize: 13, fontWeight: FontWeight.w600, color: context.tertiary)),
             ],
           ),
         ),
