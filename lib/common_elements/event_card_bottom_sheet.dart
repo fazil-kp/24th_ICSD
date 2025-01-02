@@ -38,7 +38,7 @@ class EventCardBottomSheet extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           spacing: 3,
                           children: [
-                            Icon(Icons.place_rounded, size: 12, color: context.surface),
+                            Icon(Icons.place_outlined, size: 12, color: context.surface),
                             Text(venue, style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary)),
                             10.width,
                             Icon(Icons.schedule_rounded, size: 12, color: context.surface),
