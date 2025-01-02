@@ -16,12 +16,7 @@ class DayOneEvent extends StatelessWidget {
             heading: "Day 1 Events",
             isScreen: isScreen,
             events: [
-              EventCard(
-                no: 1,
-                program: "hiiii",
-                venue: 'kokomo',
-                time: '8989',
-              )
+              for (int i = 0; i <= 30; i++) EventCard(no: 1, program: "Program Name", venue: 'Auditorium', time: '3:00 PM'),
             ],
           )
         ],
