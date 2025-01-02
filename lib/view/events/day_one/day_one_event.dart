@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:icsd/common_elements/event_card.dart';
+import 'package:icsd/common_elements/event_main_scree.dart';
 
 class DayOneEvent extends StatelessWidget {
-  const DayOneEvent({super.key});
+  final bool? isScreen;
+  const DayOneEvent({super.key, this.isScreen});
 
   @override
   Widget build(BuildContext context) {
@@ -10,13 +12,18 @@ class DayOneEvent extends StatelessWidget {
       child: Column(
         spacing: 15,
         children: [
-          for (int i = 0; i <= 10; i++)
-            EventCard(
-              no: i + 1,
-              program: "Program Name",
-              venue: "Auditorium",
-              time: "3:00 PM",
-            ),
+          EventMainScree(
+            heading: "Day 1 Events",
+            isScreen: isScreen,
+            events: [
+              EventCard(
+                no: 1,
+                program: "hiiii",
+                venue: 'kokomo',
+                time: '8989',
+              )
+            ],
+          )
         ],
       ),
     );
