@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:icsd/common_elements/event_card.dart';
 import 'package:icsd/config/colors.dart';
 import 'package:icsd/config/theme.dart';
-import 'package:mine/config/color/colors.dart';
 import 'package:mine/extension/integer_extension.dart';
 import 'package:mine/extension/widget_extension.dart';
 
@@ -42,7 +41,7 @@ class EventMainScree extends StatelessWidget {
                         height: 40,
                         width: 40,
                         decoration: BoxDecoration(color: context.secondary, shape: BoxShape.circle),
-                        child: Icon(Icons.arrow_back, color: whiteColor, size: 24),
+                        child: Icon(Icons.arrow_back, color: context.surface, size: 24),
                       ).onTap(() => Navigator.pop(context)),
                     ],
                   ))

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:icsd/config/colors.dart';
 import 'package:icsd/config/theme.dart';
-import 'package:mine/config/color/colors.dart';
 import 'package:mine/extension/integer_extension.dart';
 
 class HomeScreenHeader extends StatelessWidget {
@@ -10,12 +9,12 @@ class HomeScreenHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(22.0),
+      padding: const EdgeInsets.only(left: 22.0, top: 22, bottom: 5),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Container(height: 40, width: 40, decoration: BoxDecoration(shape: BoxShape.circle, color: whiteColor, image: DecorationImage(image: AssetImage("assets/images/dyuthi.png"), fit: BoxFit.fill))),
+          Container(height: 40, width: 40, decoration: BoxDecoration(shape: BoxShape.circle, color: context.surface, image: DecorationImage(image: AssetImage("assets/images/dyuthi.png"), fit: BoxFit.fill))),
           10.width,
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,

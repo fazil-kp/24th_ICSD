@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:icsd/config/colors.dart';
 import 'package:icsd/config/theme.dart';
-import 'package:mine/config/color/colors.dart';
 import 'package:mine/extension/context_extension.dart';
 import 'package:mine/extension/integer_extension.dart';
 import 'package:mine/extension/widget_extension.dart';
@@ -48,14 +47,14 @@ class EventCard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     spacing: 3,
                     children: [
-                      Icon(Icons.place_rounded, size: 12, color: whiteColor),
+                      Icon(Icons.place_rounded, size: 12, color: context.surface),
                       Text(venue, style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary)),
                     ],
                   )
                 ],
               ),
               Spacer(),
-              Icon(Icons.schedule_rounded, size: 12, color: whiteColor),
+              Icon(Icons.schedule_rounded, size: 12, color: context.surface),
               Text(time, style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary)),
               2.width,
             ],

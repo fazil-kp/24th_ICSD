@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:mine/config/color/colors.dart';
+import 'package:icsd/config/colors.dart';
 import 'package:mine/extension/integer_extension.dart';
 
 class SplashScreen extends HookConsumerWidget {
@@ -20,10 +20,10 @@ class SplashScreen extends HookConsumerWidget {
       return timer.cancel;
     }, [controller]);
     return Container(
-      color: whiteColor,
+      color: context.surface,
       child: Scaffold(
-        appBar: AppBar(toolbarHeight: 0, backgroundColor: whiteColor),
-        backgroundColor: whiteColor,
+        appBar: AppBar(toolbarHeight: 0, backgroundColor: context.surface),
+        backgroundColor: context.surface,
         body: FadeTransition(
           opacity: animation,
           child: Column(
