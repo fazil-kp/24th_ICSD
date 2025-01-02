@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:icsd/config/colors.dart';
 import 'package:icsd/config/theme.dart';
 import 'package:icsd/view/program/day1/day1_first_row.dart';
-import 'package:icsd/view/program/day1/day1_second_row.dart';
-import 'package:icsd/view/program/day1/day1_third_row.dart';
 
 class HomeScreenFooter extends StatelessWidget {
   const HomeScreenFooter({
@@ -24,12 +22,7 @@ class HomeScreenFooter extends StatelessWidget {
             Text("See All", style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.w400, color: context.surface)),
           ],
         ),
-        //! First Row of Events
         Day1FirstRow(),
-        //! Second Row of Events
-        Day1SecondRow(),
-        //! Third Row of Events
-        Day1ThirdRow(),
       ],
     );
   }

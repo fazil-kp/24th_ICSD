@@ -7,13 +7,12 @@ class Day1FirstRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
+      child: Column(
         spacing: 15,
         children: [
           for (int i = 0; i <= 10; i++)
             EventCard(
-              image: "assets/images/ban2.jpg",
+              no: i + 1,
               program: "Program Name",
               venue: "Auditorium",
               time: "3:00 PM",
