@@ -34,17 +34,18 @@ class EventMainScree extends StatelessWidget {
             ),
             if (isScreen == true)
               Positioned(
-                  left: 0,
-                  child: Row(
-                    children: [
-                      Container(
-                        height: 40,
-                        width: 40,
-                        decoration: BoxDecoration(color: context.secondary, shape: BoxShape.circle),
-                        child: Icon(Icons.arrow_back, color: context.surface, size: 24),
-                      ).onTap(() => Navigator.pop(context)),
-                    ],
-                  ))
+                left: 0,
+                child: Row(
+                  children: [
+                    Container(
+                      height: 40,
+                      width: 40,
+                      decoration: BoxDecoration(color: context.secondary, shape: BoxShape.circle),
+                      child: Icon(Icons.arrow_back, color: context.surface, size: 24),
+                    ).onTap(() => Navigator.pop(context)),
+                  ],
+                ),
+              )
           ],
         ),
       ),
