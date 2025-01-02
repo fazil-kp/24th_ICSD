@@ -13,7 +13,7 @@ class DayThreeEvent extends StatelessWidget {
         spacing: 15,
         children: [
           EventMainScree(
-            heading: "Day 1 Events",
+            heading: "Day 3 Events",
             isScreen: isScreen,
             events: [
               for (int i = 0; i <= 30; i++) EventCard(no: 1, program: "Program Name", venue: 'Auditorium', time: '3:00 PM'),
