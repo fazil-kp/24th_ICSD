@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:icsd/common_elements/event_card.dart';
 
-class Day1FirstRow extends StatelessWidget {
-  const Day1FirstRow({super.key});
+class DayThreeEvent extends StatelessWidget {
+  const DayThreeEvent({super.key});
 
   @override
   Widget build(BuildContext context) {
