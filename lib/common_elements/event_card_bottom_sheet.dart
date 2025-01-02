@@ -49,9 +49,7 @@ class EventCardBottomSheet extends StatelessWidget {
                     ),
                   ),
                   10.height,
-                  Divider(
-                    color: context.surface,
-                  ),
+                  Divider(color: context.surface),
                   Padding(padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10), child: SingleChildScrollView(child: Text(content, style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.w600, color: context.surface, letterSpacing: .5), textAlign: TextAlign.justify))),
                 ],
               ),
