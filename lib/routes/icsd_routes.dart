@@ -4,7 +4,6 @@ import 'package:icsd/helper/custom_scaffold.dart';
 import 'package:icsd/routes/route_list.dart';
 
 import '../config/constants.dart';
-import '../splash.dart';
 
 final GoRouter routeX = GoRouter(
   initialLocation: "/",
@@ -34,18 +33,9 @@ List<RouteBase> _buildRoutes() {
       pageBuilder: (context, state) => CustomTransitionPage(
         key: state.pageKey,
         transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: CurveTween(curve: Curves.easeInOutSine).animate(animation), child: child),
-        child: const SplashScreen(),
+        child: const CustomScaffold(),
       ),
       routes: [
-        GoRoute(
-          path: 'main',
-          parentNavigatorKey: ConstanceData.navigatorKey,
-          pageBuilder: (context, state) => CustomTransitionPage(
-            key: state.pageKey,
-            transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: CurveTween(curve: Curves.easeInOutSine).animate(animation), child: child),
-            child: const CustomScaffold(),
-          ),
-        ),
         ..._mainRoutes(),
       ],
     ),

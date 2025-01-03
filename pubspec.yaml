@@ -22,6 +22,7 @@ dependencies:
   carousel_slider: ^5.0.0
   url_strategy: ^0.3.0
   flutter_launcher_icons: ^0.14.2
+  flutter_native_splash: ^2.4.4
 
 dev_dependencies:
   flutter_test:
@@ -61,3 +62,11 @@ flutter_launcher_icons:
   macos:
     generate: true
     image_path: "assets/images/splash.png"
+
+flutter_native_splash:
+  image: assets/images/splash.png
+  color: "#FFFFFF"
+  android: true
+  ios: true
+  web: true
+
