@@ -22,7 +22,7 @@ class EventCard extends StatelessWidget {
           context: context,
           isScrollControlled: true,
           builder: (context) {
-            return EventCardBottomSheet(program: program, venue: venue ?? '', time: time, content: content);
+            return EventCardBottomSheet(program: program, venue: venue, time: time, content: content);
           },
         );
       },

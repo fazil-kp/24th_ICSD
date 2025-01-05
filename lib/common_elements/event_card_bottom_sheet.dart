@@ -6,10 +6,10 @@ import 'package:mine/extension/widget_extension.dart';
 
 class EventCardBottomSheet extends StatelessWidget {
   final String program;
-  final String venue;
+  final String? venue;
   final String time;
-  final String content;
-  const EventCardBottomSheet({super.key, required this.program, required this.venue, required this.time, required this.content});
+  final String? content;
+  const EventCardBottomSheet({super.key, required this.program, this.venue, required this.time, this.content});
 
   @override
   Widget build(BuildContext context) {
@@ -38,9 +38,11 @@ class EventCardBottomSheet extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           spacing: 3,
                           children: [
-                            Icon(Icons.place_outlined, size: 12, color: context.surface),
-                            Text(venue, style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary)),
-                            10.width,
+                            if (venue != null) ...[
+                              Icon(Icons.place_outlined, size: 12, color: context.surface),
+                              Text(venue ?? '', style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary)),
+                              10.width,
+                            ],
                             Icon(Icons.schedule_rounded, size: 12, color: context.surface),
                             Text(time, style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary)),
                           ],
@@ -48,9 +50,11 @@ class EventCardBottomSheet extends StatelessWidget {
                       ],
                     ),
                   ),
-                  10.height,
-                  Divider(color: context.surface),
-                  Padding(padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10), child: SingleChildScrollView(child: Text(content, style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.w600, color: context.surface, letterSpacing: .5), textAlign: TextAlign.justify))),
+                  if (content != null) ...[
+                    10.height,
+                    Divider(color: context.surface),
+                    Padding(padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10), child: SingleChildScrollView(child: Text(content ?? '', style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.w600, color: context.surface, letterSpacing: .5), textAlign: TextAlign.justify))),
+                  ],
                 ],
               ),
               Positioned(
