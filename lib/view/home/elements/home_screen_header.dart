@@ -14,7 +14,7 @@ class HomeScreenHeader extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Container(height: 40, width: 40, decoration: BoxDecoration(shape: BoxShape.circle, color: context.surface, image: DecorationImage(image: AssetImage("assets/images/dyuthi.png"), fit: BoxFit.fill))),
+          Container(height: 40, width: 40, decoration: BoxDecoration(shape: BoxShape.circle, image: DecorationImage(image: AssetImage("assets/images/dyuthi.jpg"), fit: BoxFit.fill))),
           10.width,
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
