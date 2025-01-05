@@ -141,7 +141,7 @@ class DayOneEvent extends StatelessWidget {
               ),
               EventCard(
                 no: 20,
-                program: "Panel Discussion 1",
+                program: "Panel Discussion 1\nModerator -Dr Kiran Thampi, Head, Department of Social Work, RCSS (Autonomous)",
                 venue: "RBS Auditorium",
                 time: "16:00 - 17:00",
                 content: """
@@ -155,6 +155,30 @@ SPEAKERS:
 THEME:
 Pragati: A sustainable university – community model for promoting long-term engagement, empowerment, and efficacy.
 """,
+              ),
+              EventCard(
+                no: 21,
+                program: "Panel Discussion 2\nModerator: Rev Dr Shinto Joseph, Department of Social Work, RCSS (Autonomous)",
+                venue: "Conference Hall (Level 3 RBS)",
+                time: "16.00 - 17.00",
+                content: """SPEAKERS:\n-Dr. Sumeet Jain, Senior Lecturer, University of Edinburgh\n-Dr. Sachin Barbde, Mental Health Program Manager, Ekjut\n-Jasmine Kalha, Programme Manager, Centre for Mental Health Law and Policy, Pune\n-Manoj Kumar, Director, Mental Health Action Trust, Kerala\n-Pooja Pillai, Durans Mental Health Program, Uttarakhand,\n-THEME: \n"Recovery and Mental Health in India: Community-based Responses""",
+              ),
+              EventCard(
+                no: 22,
+                program: "Campus Tour",
+                time: "17.00-18.00",
+              ),
+              EventCard(
+                no: 23,
+                program: "Cultural Night & ICSD Presidential Dinner",
+                venue: "RBS Auditorium",
+                time: "18.00-19.00",
+              ),
+              EventCard(
+                no: 24,
+                program: "Dinner and ICSD Auction (ICSD Award Ceremony",
+                venue: "RBS Auditorium",
+                time: "18.00-19.00",
               ),
             ],
           )
