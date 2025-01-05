@@ -14,7 +14,7 @@ class EventCardBottomSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FractionallySizedBox(
-      heightFactor: (content != null || content?.isNotEmpty == true) ? 0.3 : 0.15,
+      heightFactor: (content != null || content?.isNotEmpty == true) ? 0.5 : 0.15,
       child: DefaultTabController(
         length: 3,
         child: Container(

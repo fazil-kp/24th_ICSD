@@ -120,6 +120,41 @@ class DayOneEvent extends StatelessWidget {
                 time: "14.00-14.45",
                 content: "SPEAKER: Shri Manoj Jha, H'ble Member of Parliament, India THEME: Allies and Agitators for Structural Transformation: Political Engagement in Social Work",
               ),
+              EventCard(
+                no: 17,
+                program: "Plenary Session 1 Moderator:Prof Fr Saju M.D",
+                venue: "RBS Auditorium",
+                time: "15.00-15.30",
+                content: "SPEAKER: Prof. Melissa Grady, Catholic University of America, USA & Jo Ann Regan, Associate Professor, The Catholic University of America National Catholic School of Social Service THEME: Lessons Learned: Expanding International Social Work Practice through Social Work Education Collaborations SPEAKER: Prof. Alice K. Butterfield, University of Illinois at Chicago, USA THEME: Leadership Strategies for Catalyzing Locality-based Social Development: Applying Philip Selznik’s Institutional School of Thought  SPEAKER: Dr Robert Barney, Associate Professor, Stockton University, USA, Dr. Diane falk, Stockton University, USA, THEME: Skill-based Learning through Social Entrepreneurial Projects at a School in Uganda",
+              ),
+              EventCard(
+                no: 18,
+                program: "Concluding the session by Moderator",
+                venue: "RBS Auditorium",
+                time: "15:30 - 15:40",
+              ),
+              EventCard(
+                no: 19,
+                program: "Tea Break",
+                time: "15:40 - 16:00",
+              ),
+              EventCard(
+                no: 20,
+                program: "Panel Discussion 1",
+                venue: "RBS Auditorium",
+                time: "16:00 - 17:00",
+                content: """
+SPEAKERS:
+- Dr. Denise Burnette, PhD: Virginia Commonwealth University (Richmond, VA, USA)
+- Dr. Asha Banu Soletti, PhD: Tata Institute of Social Sciences (Mumbai, India)
+- Smitha Nair, Praxis
+- Dipak Rawte, Pragati
+- Parvin Yadav, Pragati
+
+THEME:
+Pragati: A sustainable university – community model for promoting long-term engagement, empowerment, and efficacy.
+""",
+              ),
             ],
           )
         ],
