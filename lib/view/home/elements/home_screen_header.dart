@@ -3,6 +3,7 @@ import 'package:icsd/config/colors.dart';
 import 'package:icsd/config/theme.dart';
 import 'package:mine/extension/integer_extension.dart';
 import 'package:smart_popup/smart_popup.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreenHeader extends StatelessWidget {
   const HomeScreenHeader({super.key});
@@ -32,10 +33,13 @@ class HomeScreenHeader extends StatelessWidget {
               showDialog(
                 context: context,
                 builder: (context) => SmartPopup(
-                  title: "Event Schedule Available",
+                  title: "Download Program Schedule",
                   subTitle: "You can now download the complete program schedule of Dyuthi 2025.",
                   primaryButtonText: "Download",
                   imagePath: "assets/images/dyuthi.jpg",
+                  primaryButtonTap: () {
+                    _launchURL("https://drive.google.com/file/d/1nH2OOWXt_IkEI506ZytVja0LSVVh1I1x/view?usp=drivesdk");
+                  },
                   closeButtonBackgroundColor: context.secondary,
                   closeButtonIconColor: context.surface,
                   primaryButtonColor: context.secondary,
@@ -52,5 +56,13 @@ class HomeScreenHeader extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  void _launchURL(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }
