@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:icsd/config/colors.dart';
 import 'package:icsd/config/theme.dart';
 import 'package:mine/extension/integer_extension.dart';
+import 'package:smart_popup/smart_popup.dart';
 
 class HomeScreenHeader extends StatelessWidget {
   const HomeScreenHeader({super.key});
@@ -25,6 +26,29 @@ class HomeScreenHeader extends StatelessWidget {
               Text("24th ICSD", style: context.bodySmall?.copyWith(fontSize: 13, fontWeight: FontWeight.w600, color: context.surface)),
             ],
           ),
+          Spacer(),
+          InkWell(
+            onTap: () {
+              showDialog(
+                context: context,
+                builder: (context) => SmartPopup(
+                  title: "Event Schedule Available",
+                  subTitle: "You can now download the complete program schedule of Dyuthi 2025.",
+                  primaryButtonText: "Download",
+                  imagePath: "assets/images/dyuthi.jpg",
+                  closeButtonBackgroundColor: context.secondary,
+                  closeButtonIconColor: context.surface,
+                  primaryButtonColor: context.secondary,
+                ),
+              );
+            },
+            child: Icon(
+              Icons.download,
+              color: Colors.white,
+              size: 26,
+            ),
+          ),
+          10.width,
         ],
       ),
     );
