@@ -14,7 +14,7 @@ class EventCardBottomSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FractionallySizedBox(
-      heightFactor: (content != null || content?.isNotEmpty == true) ? 0.3 : 0.1,
+      heightFactor: (content != null || content?.isNotEmpty == true) ? 0.3 : 0.15,
       child: DefaultTabController(
         length: 3,
         child: Container(
@@ -31,7 +31,7 @@ class EventCardBottomSheet extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Text(program, style: context.bodySmall?.copyWith(fontSize: 16, fontWeight: FontWeight.bold, color: context.surface)),
+                        Text(program, style: context.bodySmall?.copyWith(fontSize: 16, fontWeight: FontWeight.bold, color: context.surface), overflow: TextOverflow.clip),
                         15.height,
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
