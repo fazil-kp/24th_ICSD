@@ -14,6 +14,7 @@ class DayOneEvent extends StatelessWidget {
         children: [
           EventMainScree(
             heading: "Day 1 Events",
+            date: '08-01-2025',
             isScreen: isScreen,
             events: [
               EventCard(

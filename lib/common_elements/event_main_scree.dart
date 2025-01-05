@@ -8,8 +8,9 @@ import 'package:mine/extension/widget_extension.dart';
 class EventMainScree extends StatelessWidget {
   final bool? isScreen;
   final String? heading;
+  final String? date;
   final List<EventCard> events;
-  const EventMainScree({super.key, this.isScreen = false, this.heading, required this.events});
+  const EventMainScree({super.key, this.isScreen = false, this.heading, required this.events, this.date});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,13 @@ class EventMainScree extends StatelessWidget {
                 if (isScreen == true) ...[
                   Padding(
                     padding: const EdgeInsets.only(left: 55.0, top: 8),
-                    child: Text(heading ?? '', style: context.bodySmall?.copyWith(fontSize: 16, fontWeight: FontWeight.bold, color: context.surface)),
+                    child: Row(
+                      children: [
+                        Text(heading ?? '', style: context.bodySmall?.copyWith(fontSize: 16, fontWeight: FontWeight.bold, color: context.surface)),
+                        Spacer(),
+                        Text(date ?? '', style: context.bodySmall?.copyWith(fontSize: 16, fontWeight: FontWeight.bold, color: context.surface)),
+                      ],
+                    ),
                   ),
                   10.height,
                 ],
