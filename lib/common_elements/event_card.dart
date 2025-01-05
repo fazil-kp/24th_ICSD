@@ -9,10 +9,10 @@ import 'package:mine/extension/widget_extension.dart';
 class EventCard extends StatelessWidget {
   final int? no;
   final String program;
-  final String venue;
+  final String? venue;
   final String time;
   final String content;
-  const EventCard({super.key, required this.program, required this.venue, required this.time, this.no, required this.content});
+  const EventCard({super.key, required this.program, this.venue, required this.time, this.no, required this.content});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class EventCard extends StatelessWidget {
           context: context,
           isScrollControlled: true,
           builder: (context) {
-            return EventCardBottomSheet(program: program, venue: venue, time: time, content: content);
+            return EventCardBottomSheet(program: program, venue: venue ?? '', time: time, content: content);
           },
         );
       },
@@ -47,22 +47,23 @@ class EventCard extends StatelessWidget {
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   spacing: 5,
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 3.0),
                       child: Text(program, style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.surface)),
                     ),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      spacing: 3,
-                      children: [
-                        Icon(Icons.place_outlined, size: 12, color: context.surface),
-                        Text(venue, style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary)),
-                      ],
-                    )
+                    if (venue != null)
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        spacing: 3,
+                        children: [
+                          Icon(Icons.place_outlined, size: 12, color: context.surface),
+                          Text(venue ?? '', style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary)),
+                        ],
+                      )
                   ],
                 ),
                 Spacer(),

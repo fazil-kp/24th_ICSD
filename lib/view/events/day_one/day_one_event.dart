@@ -26,7 +26,6 @@ class DayOneEvent extends StatelessWidget {
               EventCard(
                 no: 2,
                 program: "Tea and Snacks ",
-                venue: ' ',
                 time: '9.30- 9.50 ',
                 content: ' ',
               ),
