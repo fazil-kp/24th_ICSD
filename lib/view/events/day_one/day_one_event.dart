@@ -88,6 +88,38 @@ class DayOneEvent extends StatelessWidget {
                 time: '11.35-11.45',
                 content: 'Dr Binoy Joseph, Associate Director, Professor,Rajagiri College of Social Sciences (Autonomous), Kalamassery',
               ),
+              EventCard(
+                no: 12,
+                program: "Felicitation from International Participants ",
+                venue: 'RBS Auditorium (Level 7 RBS) ',
+                time: '11.45-11.50 ',
+                content: 'Dr Denisse Burnette, Virginia Commonwealth University, USA; Dr Joan Pittman, School of Social Work, University of Maryland, USA',
+              ),
+              EventCard(
+                no: 13,
+                program: "Releasing of Abstract Book and Department books and SDI 50th Anniversary special issue",
+                venue: 'RBS Auditorium (Level 7 RBS)',
+                time: '11.50-12.00 ',
+              ),
+              EventCard(
+                no: 14,
+                program: "ICSD Keynote Address ",
+                venue: 'RBS Auditorium (Level 7 RBS) ',
+                time: '12.00 -12.50 ',
+                content: 'Prof. John Devaney, Dean and Head of the School of Social and Political Science, and Centenary Chair of Social Work, University of Edinburg, U.K ',
+              ),
+              EventCard(
+                no: 15,
+                program: "Lunch ",
+                time: '12.50-13.50',
+              ),
+              EventCard(
+                no: 16,
+                program: "Shanti Khinduka Lecture ",
+                venue: 'RBS Auditorium ',
+                time: '14.00-14.45 ',
+                content: "SPEAKER: Shri Manoj Jha, H'ble Member of Parliament, India THEME: Allies and Agitators for Structural Transformation: Political Engagement in Social Work ",
+              ),
             ],
           )
         ],
