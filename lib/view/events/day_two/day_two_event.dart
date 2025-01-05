@@ -14,6 +14,7 @@ class DayTwoEvent extends StatelessWidget {
         children: [
           EventMainScree(
             heading: "Day 2 Events",
+            date: "09-01-2025",
             isScreen: isScreen,
             events: [
               for (int i = 0; i <= 30; i++)
