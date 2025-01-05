@@ -11,8 +11,8 @@ class EventCard extends StatelessWidget {
   final String program;
   final String? venue;
   final String time;
-  final String content;
-  const EventCard({super.key, required this.program, this.venue, required this.time, this.no, required this.content});
+  final String? content;
+  const EventCard({super.key, required this.program, this.venue, required this.time, this.no, this.content});
 
   @override
   Widget build(BuildContext context) {

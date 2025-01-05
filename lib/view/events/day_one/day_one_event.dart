@@ -21,27 +21,23 @@ class DayOneEvent extends StatelessWidget {
                 program: "Registrations",
                 venue: 'RBS Auditorium, Rajagiri Valley Campus, Kakkanad',
                 time: '9:00 - 9.30 ',
-                content: ' ',
               ),
               EventCard(
                 no: 2,
                 program: "Tea and Snacks ",
                 time: '9.30- 9.50 ',
-                content: ' ',
               ),
               EventCard(
                 no: 3,
                 program: "Rajagiri Anthem ",
                 venue: 'RBS Auditorium (Level 7 RBS) ',
                 time: '9.55-10.00 ',
-                content: ' ',
               ),
               EventCard(
                 no: 4,
                 program: "Lamp Lighting and dignitaries on the dias",
                 venue: 'RBS Auditorium (Level 7 RBS) ',
                 time: '10.00 - 10.10 ',
-                content: ' ',
               ),
               EventCard(
                 no: 5,
