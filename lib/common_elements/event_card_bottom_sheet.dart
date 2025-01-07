@@ -14,7 +14,7 @@ class EventCardBottomSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FractionallySizedBox(
-      heightFactor: (content != null || content?.isNotEmpty == true) ? 0.5 : 0.15,
+      heightFactor: (content != null || content?.isNotEmpty == true) ? 0.7 : 0.15,
       child: DefaultTabController(
         length: 3,
         child: Container(
@@ -40,11 +40,13 @@ class EventCardBottomSheet extends StatelessWidget {
                           children: [
                             if (venue != null) ...[
                               Icon(Icons.place_outlined, size: 12, color: context.surface),
-                              Text(venue ?? '', style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary)),
+                              SizedBox(width: 200, child: Text(venue ?? '', style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary), overflow: TextOverflow.visible)),
                               10.width,
                             ],
+                            Spacer(),
                             Icon(Icons.schedule_rounded, size: 12, color: context.surface),
                             Text(time, style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary)),
+                            15.width,
                           ],
                         )
                       ],
@@ -53,7 +55,7 @@ class EventCardBottomSheet extends StatelessWidget {
                   if (content != null) ...[
                     10.height,
                     Divider(color: context.surface),
-                    Padding(padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10), child: SingleChildScrollView(child: Text(content ?? '', style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.w600, color: context.surface, letterSpacing: .5), textAlign: TextAlign.justify))),
+                    Padding(padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10), child: SingleChildScrollView(child: Text(content ?? '', style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.w600, color: context.surface, letterSpacing: 1.5)))),
                   ],
                 ],
               ),

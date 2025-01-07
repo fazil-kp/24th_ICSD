@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:icsd/common_elements/event_card.dart';
-import 'package:icsd/common_elements/event_main_scree.dart';
+import 'package:icsd/common_elements/event_main_screen.dart';
 
 class DayOneEvent extends StatelessWidget {
   final bool? isScreen;
@@ -12,7 +12,7 @@ class DayOneEvent extends StatelessWidget {
       child: Column(
         spacing: 15,
         children: [
-          EventMainScree(
+          EventMainScreen(
             heading: "Day 1 Events",
             date: '08-01-2025',
             isScreen: isScreen,

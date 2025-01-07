@@ -5,12 +5,12 @@ import 'package:icsd/config/theme.dart';
 import 'package:mine/extension/integer_extension.dart';
 import 'package:mine/extension/widget_extension.dart';
 
-class EventMainScree extends StatelessWidget {
+class EventMainScreen extends StatelessWidget {
   final bool? isScreen;
   final String? heading;
   final String? date;
   final List<EventCard> events;
-  const EventMainScree({super.key, this.isScreen = false, this.heading, required this.events, this.date});
+  const EventMainScreen({super.key, this.isScreen = false, this.heading, required this.events, this.date});
 
   @override
   Widget build(BuildContext context) {
