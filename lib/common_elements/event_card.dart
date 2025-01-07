@@ -59,13 +59,7 @@ class EventCard extends StatelessWidget {
                             spacing: 3,
                             children: [
                               Icon(Icons.place_outlined, size: 12, color: context.surface),
-                              SizedBox(
-                                  width: context.width() - 76,
-                                  child: Text(
-                                    venue ?? '',
-                                    style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary),
-                                    overflow: TextOverflow.visible,
-                                  )),
+                              SizedBox(width: context.width() - 76, child: Text(venue ?? '', style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.tertiary), overflow: TextOverflow.visible)),
                             ],
                           ),
                         Row(

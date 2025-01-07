@@ -41,6 +41,8 @@ class HomeScreenBody extends StatelessWidget {
               items: [
                 CarouselContent(image: "assets/images/dyuthi.jpg"),
                 CarouselContent(image: "assets/images/ban1.jpg"),
+                CarouselContent(image: "assets/images/day1_ban1.jpg"),
+                CarouselContent(image: "assets/images/day1_ban2.jpg"),
                 CarouselContent(image: "assets/images/ban2.jpg"),
                 CarouselContent(image: "assets/images/ban3.jpg"),
               ],
