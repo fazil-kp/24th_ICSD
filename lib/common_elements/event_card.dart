@@ -45,11 +45,7 @@ class EventCard extends StatelessWidget {
                           padding: const EdgeInsets.only(left: 3.0),
                           child: SizedBox(
                             width: context.width() - 65,
-                            child: Text(
-                              "$no - $program",
-                              style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.surface),
-                              overflow: TextOverflow.visible,
-                            ),
+                            child: Text("$no - $program", style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.surface), overflow: TextOverflow.visible),
                           ),
                         ),
                         if (venue != null)
