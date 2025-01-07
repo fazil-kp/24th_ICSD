@@ -34,7 +34,7 @@ class HomeScreenHeader extends StatelessWidget {
                 context: context,
                 builder: (context) => SmartPopup(
                   title: "Download Program Schedule",
-                  subTitle: "You can now download the complete program schedule of Dyuthi 2025.",
+                  subTitle: "You can download the complete program schedule of Dyuthi 2025.",
                   primaryButtonText: "Download",
                   imagePath: "assets/images/dyuthi.jpg",
                   primaryButtonTap: () {
