@@ -21,7 +21,7 @@ class DayOneEvent extends StatelessWidget {
                 no: 1,
                 program: "Registrations",
                 venue: "RBS Auditorium, Rajagiri Valley Campus, Kakkanad",
-                time: "9:00 - 9.30",
+                time: "9.00 - 9.30",
               ),
               EventCard(
                 no: 2,
