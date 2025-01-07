@@ -46,7 +46,7 @@ class EventCard extends StatelessWidget {
                           child: SizedBox(
                             width: context.width() - 65,
                             child: Text(
-                              "${no} - ${program}",
+                              "$no - $program",
                               style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.bold, color: context.surface),
                               overflow: TextOverflow.visible,
                             ),
