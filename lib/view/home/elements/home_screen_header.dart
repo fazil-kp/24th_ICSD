@@ -46,11 +46,7 @@ class HomeScreenHeader extends StatelessWidget {
                 ),
               );
             },
-            child: Icon(
-              Icons.download,
-              color: Colors.white,
-              size: 26,
-            ),
+            child: Icon(Icons.download, color: Colors.white, size: 26),
           ),
           10.width,
         ],
