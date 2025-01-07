@@ -18,7 +18,6 @@ dependencies:
       url: https://github.com/fazil-kp/mine.git
       ref: main
   flutter_riverpod: ^2.6.1
-  hive_flutter: ^1.1.0
   carousel_slider: ^5.0.0
   url_strategy: ^0.3.0
   flutter_launcher_icons: ^0.14.2
