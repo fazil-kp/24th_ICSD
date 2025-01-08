@@ -5,7 +5,7 @@ import 'package:icsd/common_elements/event_main_screen.dart';
 class DayTwoEvent extends StatelessWidget {
   final bool? isScreen;
   const DayTwoEvent({super.key, this.isScreen});
-
+w
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -132,26 +132,14 @@ class DayTwoEvent extends StatelessWidget {
               EventCard(
                 no: 18,
                 program: "Tea and Snacks",
-                time: "15.30- 15.45",
+                time: "15.30 - 15.45",
               ),
-              EventCard(
-                no: 19,
-                program: "ICSD Branch Meetings - Africa",
-                venue: "Samanvaya (Level 5 RBS)",
-                time: "15.45 – 16.15",
-              ),
-              EventCard(
-                no: 19,
-                program: "ICSD Branch Meetings - Asia Pacific",
-                venue: "Concordia (Level 5 RBS",
-                time: "15.45 – 16.15",
-              ),
-              EventCard(
-                no: 19,
-                program: "ICSD Branch Meetings - Europe",
-                venue: "Conference Hall (Level 3 RBS)",
-                time: "15.45 – 16.15",
-              ),
+             EventCard(
+                   no: 19,
+                  program: "ICSD General Body",
+                  venue: "Concordia (Level 5 RBS)",
+                  time: "15.45 – 16.25",
+                ),
             ],
           )
         ],
