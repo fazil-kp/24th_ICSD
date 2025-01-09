@@ -38,7 +38,7 @@ class HomeScreenHeader extends StatelessWidget {
                   primaryButtonText: "Download",
                   imagePath: "assets/images/dyuthi.jpg",
                   primaryButtonTap: () {
-                    _launchURL("https://drive.google.com/file/d/1oXxnS0h4n9noo0Y5M0oqbqsOPtJ-PoZg/view?usp=drivesdk");
+                    _launchURL("https://drive.google.com/file/d/1qDNqUP8a1ZBrn-INjc2l51Su_zecvC7Q/view?usp=drivesdk");
                   },
                   closeButtonBackgroundColor: context.secondary,
                   closeButtonIconColor: context.surface,
