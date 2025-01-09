@@ -17,7 +17,7 @@ class DayThreeEvent extends StatelessWidget {
             date: "10-01-2025",
             isScreen: isScreen,
             events: [
-              EventCard(no: 1, program: " Recap", venue: "RBS Auditorium", time: "9.10 - 9.20", content: "Sr. Bincy Maria, Assistant Professor, Rajagiri College of Social Sciences, (Autonomous) Kalamassery"),
+              EventCard(no: 1, program: "Recap", venue: "RBS Auditorium", time: "9.10 - 9.20", content: "Sr. Bincy Maria, Assistant Professor, Rajagiri College of Social Sciences, (Autonomous) Kalamassery"),
               EventCard(no: 2, program: "Keynote Address", venue: "RBS Auditorium", time: "9.20 – 9.50", content: "Prof. Dr George Palattiyil, University of Edinburgh"),
               EventCard(no: 3, program: "Plenary Session 4", venue: "RBS Auditorium", time: "9.50 – 10.30", content: "MODERATOR: Dr Stephanie Odera, BSW Program Director,Associate Professor in Teaching, Virginia Commonwealth University\nSPEAKERS: Vijayan K Pillai, Professor, University of Texas at Arlington, USA\nDr. Juliann Lynn Nagoshi, Assistant Professor, Arizona State University, USA\nDr Lea Caragata, Director and Associate Professor University of British Columbia\nHadijah Mwenyango, The University of Edinburgh"),
               EventCard(no: 4, program: "Plenary Session 5", venue: "RBS Auditorium", time: "10.30 - 11.10", content: "MODERATOR: Prof. Dr Manohar Pawar, President, ICSD, Charles Sturt University, Australia\nSPEAKERS: Dr Wassie Kebede, Associate Professor, Addis Ababa University\nEric Schade, Assistant Professor, University of West Florida\nSylvia Garcia Delahaye, Professor, Applied University of Social Work-HETS Geneva, Dr Manish K Jha, TISS, Mumbai"),
