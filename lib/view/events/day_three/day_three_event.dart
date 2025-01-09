@@ -32,7 +32,7 @@ class DayThreeEvent extends StatelessWidget {
               EventCard(no: 13, program: "Paper Presentations Parallel Venue 3", venue: "Conference Hall (Level 3 RBS)", time: "14:00 - 15:30", content: "CHAIR: Dr Annapuranam K Department of Social Work, Rajagiri College of Social Sciences (Autonomous), Kalamassery\nTHEME: Health & Well being"),
               EventCard(no: 14, program: "Paper Presentations Parallel Venue 4", venue: "Conference Hall (RSOM) -Adjacent Building to RBS", time: "14:00 - 15:30", content: "CHAIR: Prof. Dr George Palattiyil University of Edinburg\nTHEME: Education and Lifelong Learning & Technology and Digital Solutions"),
               EventCard(no: 15, program: "Paper Presentations Parallel Venue 5", venue: "Conference Hall (RSOM) -Adjacent Building to RBS", time: "14:00 - 15:30", content: "CHAIR: Dr. Sunirose I P Department of Social Work, Rajagiri College of Social Sciences (Autonomous), Kalamassery\nTHEME: Health & Well Being"),
-              EventCard(no: 16, program: "Tea and Snacks", time: "15:30-15.45", content: "CHAIR: Dr. Sunirose I P Department of Social Work, Rajagiri College of Social Sciences (Autonomous), Kalamassery\nTHEME: Health & Well Being"),
+              EventCard(no: 16, program: "Tea and Snacks", time: "15:30-15.45"),
               EventCard(no: 17, program: "Dan Sanders Peace Lecture", venue: "RBS Auditorium", time: "15.45-16.30", content: "SPEAKER: Shri Jawhar Sircar, Ex Member of Parliament"),
               EventCard(no: 18, program: "Valedictory Function", venue: "RBS Auditorium", time: "16.30-17.30", content: "(ICSD Award Ceremony)"),
             ],
