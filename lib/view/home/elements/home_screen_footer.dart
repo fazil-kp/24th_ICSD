@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:icsd/config/colors.dart';
 import 'package:icsd/config/theme.dart';
 import 'package:icsd/routes/route_list.dart';
-import 'package:icsd/view/events/day_two/day_two_event.dart';
+import 'package:icsd/view/events/day_three/day_three_event.dart';
 
 class HomeScreenFooter extends StatelessWidget {
   const HomeScreenFooter({
@@ -20,15 +20,15 @@ class HomeScreenFooter extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 22.0),
           child: Row(
             children: [
-              Text("Day 2 Events", style: context.bodySmall?.copyWith(fontSize: 18, fontWeight: FontWeight.bold, color: context.surface)),
+              Text("Day 3 Events", style: context.bodySmall?.copyWith(fontSize: 18, fontWeight: FontWeight.bold, color: context.surface)),
               Spacer(),
-              InkWell(onTap: () => context.pushNamed(MainRoute.dayTwo), child: Text("See All", style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.w600, color: context.surface))),
+              InkWell(onTap: () => context.pushNamed(MainRoute.dayThree), child: Text("See All", style: context.bodySmall?.copyWith(fontSize: 12, fontWeight: FontWeight.w600, color: context.surface))),
             ],
           ),
         ),
         // DayOneEvent(),
-        DayTwoEvent(),
-        // DayThreeEvent(),
+        // DayTwoEvent(),
+        DayThreeEvent(),
       ],
     );
   }
