@@ -44,7 +44,6 @@ class DayOneEvent extends StatelessWidget {
               EventCard(no: 25, program: "Cultural Night & ICSD Presidential Dinner", venue: "RBS Auditorium", time: "18.00-19.00"),
               EventCard(no: 26, program: "Dinner and ICSD Auction (ICSD Award Ceremony)", venue: "RBS Auditorium", time: "18.00-19.00"),
 
-
               
             ],
           )
