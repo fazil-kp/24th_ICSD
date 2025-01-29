@@ -50,7 +50,6 @@ class DayOneEvent extends StatelessWidget {
 
 
 
-
               
             ],
           )
