@@ -8,5 +8,6 @@
         "rcss",
         "respo",
         "riverpod"
-    ]
+    ],
+    "cmake.sourceDirectory": "D:/fazil_flutter/flutter_projects/icsd/linux"
 }
